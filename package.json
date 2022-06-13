@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "test": "nodemon app.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build": "node run build"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
