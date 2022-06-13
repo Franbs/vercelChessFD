@@ -1,0 +1,28 @@
+<%- include('../layouts/header') %>
+
+    <div class="container">
+        <br><br>
+        <form action="/room" method="get" id="formId">
+            <select name="room" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="selectForm">
+                <option selected disabled value="" id="option">Choose a room:</option>
+                <option value="room1">Room 1</option>
+                <option value="room2">Room 2</option>
+                <option value="room3">Room 3</option>
+            </select>
+
+            <div class="container mt-5">
+                <button class="btn">See history</button>
+            </div>
+            
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("formId").onsubmit = function () {
+            if (document.getElementById("selectForm").value == "") {
+                return false;
+            }
+        }
+    </script>
+
+<%- include('../layouts/footer') %>

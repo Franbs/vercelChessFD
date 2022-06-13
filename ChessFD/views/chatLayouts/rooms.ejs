@@ -1,0 +1,24 @@
+<%- include('../layouts/header') %>
+
+    <div class="container">
+        <form action="/chat" method="get">
+            <input type="radio" id="room1" value="room1" name="room" class="mt-5">
+            <label for="room1" class="radioBtn">Room 1</label><br>
+            <input type="radio" id="room2" value="room2" name="room" class="mt-3">
+            <label for="room2" class="radioBtn">Room 2</label><br>
+            <input type="radio" id="room3" value="room3" name="room" class="mt-3">
+            <label for="room3" class="radioBtn">Room 3</label>
+
+            <div class="container mt-5">
+                <button class="btn width">Join chat</button>
+            </div>
+        </form>
+
+        <div class="container mt-3">
+            <form action="/history">
+                <button class="btn width">History</button>
+            </form>
+        </div>
+    </div>
+
+<%- include('../layouts/footer') %>

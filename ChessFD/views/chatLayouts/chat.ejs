@@ -1,0 +1,21 @@
+<%- include('../layouts/header') %>
+
+    <div class="container chat">
+        <% if (room) { %>
+            <h2 class="room" id="roomName">Room: <%= room %></h2>
+        <% } %>
+
+        <ul class="list-group" id="chatList"></ul>
+        
+        <form action="" class="fixed-bottom">
+            <div class="input-group p-3">
+                <input class="form-control float-start" type="text" placeholder="Escribe el mensaje">
+                <button class="btn float-end" onclick="sendInvite()">Send</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/chat.js"></script>
+
+<%- include('../layouts/footer') %>

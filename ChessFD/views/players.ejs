@@ -1,0 +1,20 @@
+<%- include('./layouts/header') %>
+
+    <div class="container">
+        <h2 class="room">Available players:</h2>
+
+        
+        <form action="/board" method="get" id="form">
+            <div id="chatList">
+
+            </div>
+            <div class="container mt-5">
+                <button class="btn width">Invite</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/players.js"></script>
+
+<%- include('./layouts/footer') %>

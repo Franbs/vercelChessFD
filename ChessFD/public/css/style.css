@@ -1,0 +1,103 @@
+body {
+    background-color: #221f20;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn {
+    background-color: #7c1418;
+    color: white;
+}
+
+.navigationBar {
+    background-color: #111010;
+}
+
+.link:hover {
+    color: #7c1418;
+}
+
+.link, .logo {
+    color: white;
+}
+
+.divLogo {
+    margin-top: 10%;
+}
+
+p.desc {
+    font-size: xx-large;
+}
+
+.column {
+    margin-top: 12%;
+}
+
+.divCard {
+    background-color: #111010;
+}
+
+.playBtn {
+    height: 70px;
+    width: 200px;
+    font-size: 35px;
+    margin-left: 70px;
+}
+
+.err-msg {
+	padding: 10px 15px;
+	margin-bottom: 15px;
+	color: red;
+}
+
+.username {
+    color: white;
+    margin-top: 10px;
+}
+
+.logoutBtn {
+    margin-top: 5px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    color: white;
+}
+
+.radioBtn {
+    color: white;
+}
+
+.room {
+    color: #7c1418;
+}
+
+.width {
+    width: 100px;
+}
+
+.notVisible {
+    display: none;
+}
+
+.liSelfMsg {
+    float: right;
+    margin-left: 75%;
+}
+
+.cell {
+    height: 100px;
+    width: 100px;
+    border: 1.5px solid grey;
+    border-style: inset;
+}
+
+.redcell {
+    background-color: #7c1418;
+}
+
+.whitecell {
+    background-color: #ebecd1;
+}

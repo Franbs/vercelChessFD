@@ -1,0 +1,32 @@
+<%- include('../layouts/header') %>
+
+<div class="container chat">
+    <% if (room) { %>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h2 class="room" id="roomName">Room <%= room.substring(4, 5) %></h2>
+                </div>
+                <div class="col">
+                    <form action="/deleteHistory" method="get">
+                        <input type="text" name="room" class="notVisible" value="<%= room %>">
+                        <button class="btn float-end">Delete history</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <% } %>
+
+    <% if (chat) { %>
+        <% if (chat.length > 0) { %>
+            <% chat.forEach(function(chat) { %>
+                <p class="radioBtn"><%= chat.sender + ": " + chat.message %></p>
+            <% }); %>
+        <% } else { %>
+            <p class="username">Chat history is empty</p>
+        <% } %>
+    <% } %>
+    
+</div>
+
+<%- include('../layouts/footer') %>

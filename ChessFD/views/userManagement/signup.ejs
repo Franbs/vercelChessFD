@@ -1,0 +1,37 @@
+<%- include('../layouts/header-forms') %>
+
+                            <h3 class="fw-bold mb-2 text-uppercase mt-5">Signup</h3>
+                            <p class="text-white-50 mb-5">Please enter enter your data!</p>
+
+                            <% if (error) { %>
+                                <p class="err-msg">Username or password is incorrect</p>
+                            <% } %>
+
+                            <form action="" method="post">
+                                <div class="form-outline form-white mb-4">
+                                    <label class="form-label" for="username">Username</label>
+                                    <input type="text" id="username" name="username" class="form-control form-control-lg" />
+                                </div>
+
+                                <div class="form-outline form-white mb-5">
+                                    <label class="form-label" for="password">Password</label>
+                                    <input type="password" id="password" name="password" class="form-control form-control-lg" />
+                                </div>
+
+                                <button class="btn btn-lg px-5" type="submit">Signup</button>
+                            </form>
+
+                        </div>
+
+                        <div>
+                            <p class="mb-0">Already have an account? <a href="/login" class="fw-bold link">Log in</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<%- include('../layouts/footer') %>
